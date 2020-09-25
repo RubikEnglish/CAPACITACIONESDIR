@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPACITACIONES DIR</title>
+</head>
+<body>
+    
+    <h2>CAPACITACIONES DIR</h2>
+
+    <img id="image" src="IMSS2.jpg" width="100">
+    <br>
+
+
+<script>    var image = document.getElementById("image");
+    image.addEventListener("mouseover", function(){
+        this.style ="box-shadow:2px 2px 2px green";
+        this.width = "110"
+    });
+    
+    var image = document.getElementById("image");
+    image.addEventListener("mouseout", function(){
+        this.style ="";
+        this.width = "100"
+    });
+</script>
+
+
+    <h2>CURSO ARTÍCULO 17 LSS</h2>
+    
+<br/>
+<div class="iframe-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ohuq6UL8sJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br/>
+
+
+<h2>EVALUACIÓN</h2>
+    
+    <form name="myform">
+        1. ¿Cómo actúa el Instituto, en la práctica de la verificación de registro patronal y supuesto de aseguramiento?<br>
+        <input type="radio" name="q1" value="a">Como organismo fiscal autónomo </br>
+        <input type="radio" name="q1" value="b">Como organismo público descentralizado encargado de la organización y administración del Seguro Social</br><br>
+
+        2.¿Cuál es el objeto de la práctica de la verificación?<br>
+        <input type="radio" name="q2" value="a">Verificar el supuesto aseguramiento de una inscripción ante el Instituto, y por lo tanto su procedencia o improcedencia.</br>
+        <input type="radio" name="q2" value="b"> Comprobar la actividad real del trabajador.</br><br>
+
+        3. ¿En cuánto tiempo caducan las facultades para la determinación de los créditos en la verificación del registro patronal y supuesto de aseguramiento?<br>
+        <input type="radio" name="q3" value="a">En 5 años de conformidad con el artículo 297 de la LSS.</br>
+        <input type="radio" name="q3" value="b">Al no determinarse créditos fiscales, sino sólo verificarse el supuesto de aseguramiento, no aplica la figura de la caducidad del artículo 297 de la LSS</br><br>
+
+        4.¿De conformidad con la naturaleza administrativa de la verificación del registro patronal y supuesto de aseguramiento, cuál es el ordenamiento supletorio de la LSS para su desarrollo?<br>
+        <input type="radio" name="q4" value="a">El Código Fiscal de la Federación.</br>
+        <input type="radio" name="q4" value="b">La Ley Federal de Procedimiento Administrativo.</br><br>
+
+        5.¿Cómo concluye la verificación de registro patronal y supuesto de aseguramiento?<br>
+        <input type="radio" name="q5" value="a">Con la baja del trabajador si se verifica la improcedencia de la inscripción, o sin observaciones si se verifica la existencia del supuesto de aseguramiento.</br>
+        <input type="radio" name="q5" value="b">Con la determinación de los créditos fiscales de cuotas obrero patronales omisas.</br><br>
+
+
+        <input type="button" value="Termine" onclick="check()">
+
+    </form>
+
+    <script>
+        function check(){
+            var q1=document.myform.q1.value;
+            var q2=document.myform.q2.value;
+            var q3=document.myform.q3.value;
+            var q4=document.myform.q4.value;
+            var q5=document.myform.q5.value;
+            var count=0;
+
+            if(q1=="b"){
+                count++;
+            }
+
+            if(q2=="a"){
+                count++;
+            }
+
+            if(q3=="b"){
+                count++;
+            }
+
+            if(q4=="b"){
+                count++;
+            }
+
+            if(q5=="a"){
+                count++;
+            }
+
+            alert("Tienes "+count+" respuesta(s) correcta(s)");
+        }
+    </script>
+
+
+
+
+<br/>
+        <video src="VID.mp4" autoplay controls width="300"></video>
+
+</body>
+</html>
